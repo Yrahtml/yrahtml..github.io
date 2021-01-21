@@ -1,0 +1,114 @@
+*{
+	box-sizing: border-box; 
+	font-family: 'Roboto', sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+.container{
+	margin: 0 auto;
+	 width: 1150px;
+}
+.header{
+    text-align:right; 
+    width:100%; 
+    height:455px; 
+    background: url(../img/Header.png);
+}
+.header > h1{
+	margin-top: 100px; 
+	font-size: 64px; 
+	color: #4A6FE7;
+	animation:anim 3s 1; 
+}
+ .header > h2{ 
+ 	font-size:20px; 
+ 	color: #333F89;
+ 	animation:anime 3s 1;
+ }
+.nav_pages{
+	width:1150px;
+	margin-top:20px;
+	background: #C8D9FD;
+	padding-left:200px;   
+}
+.nav_pages>a{
+	display:inline-block;
+    text-decoration:none;
+    font-size:24px;
+    color:#333F89;   
+    opacity:0.5;
+    font-weight:bold;
+    height:70px;
+    vertical-align: top; 
+    line-height: 75px;
+    margin: 0 30px;
+    transition:transform 1s;
+    padding: 10px;
+    line-height:transform(1s) 
+} 
+.nav_pages > a:nth-child(3){
+	margin-top:7px;
+	background:url(../img/logo_nav.png);
+	width:58px;
+	height:58px;
+    opacity:1;   
+}
+.nav_pages > a:hover{transform:1.2px; }
+@keyframes anim{
+      0%{
+        transform:translateY(-200px);
+}        
+}
+@keyframes anime{
+      0%{
+        transform:translateX(-200px);
+}
+}
+.footer{
+    height: 120px;
+    width: 100%;
+    background: #C8D9FD;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer_headline > a{
+    display: inline-block;
+    background: url(../img/logo1.png);
+    width: 58px;
+    height: 58px;
+}
+.nav_social, .footer_headline, .footer_headline > div{
+    display: inline-block;
+    vertical-align: center;
+}
+ .nav_social > a{
+    margin-left: 22px;
+ }
+ .nav_footer{
+    width: 200px;
+}
+.nav_footer > a{
+    text-decoration: none;
+    font-size: 22px;
+    color: #333F89;
+    opacity: 0.5;
+    font-weight: bold;
+    margin-left: 10px;
+    transform: 1s;
+}
+.nav_social, .footer_headline, .footer_headline > a:hover{
+    transform: scale(1.2);
+}
+.nav_footer > a:nth-child(4){
+    margin-left: 30px;
+}
+div>h2{
+    color: #333F89;
+    font-size:34px; 
+}
+div>h3{
+    color: #333F89;
+    font-size:14px;
+}
